@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thế Giới Dễ Thương</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Nhạc nền lãng mạn và dễ thương -->
+  <audio id="background-music" autoplay loop>
+    <source src="assets/music.mp3" type="audio/mpeg" />
+    <!-- Nếu file nhạc không phát, hãy kiểm tra đường dẫn và tên file -->
+  </audio>
+
+  <!-- Nội dung trang chính -->
+  <div class="container">
+    <h1>Chào mừng đến với thế giới dễ thương!</h1>
+
+    <!-- Hiển thị các nhân vật -->
+    <div class="characters">
+      <img src="assets/kuromi.png" alt="Kuromi" />
+      <img src="assets/cinnamoroll.png" alt="Cinnamoroll" />
+      <img src="assets/hellokitty.png" alt="Hello Kitty" />
+    </div>
+
+    <!-- Nút bấm hiển thị Trò chơi & Lời nhắn -->
+    <div class="buttons">
+      <button onclick="showGame()">Trò Chơi</button>
+      <button onclick="showMessage()">Lời Nhắn</button>
+    </div>
+  </div>
+
+  <!-- Phần ẩn: Trò chơi -->
+  <div class="overlay" id="game-section">
+    <div class="popup">
+      <h2>Trò Chơi</h2>
+      <p>Đây là nội dung trò chơi dễ thương (bạn có thể thêm câu hỏi, hình ảnh, v.v.).</p>
+      <button onclick="closeGame()">Đóng</button>
+    </div>
+  </div>
+
+  <!-- Phần ẩn: Lời nhắn -->
+  <div class="overlay" id="message-section">
+    <div class="popup">
+      <h2>Lời Nhắn</h2>
+      <p>Chúc bạn một ngày tràn đầy niềm vui và hạnh phúc!</p>
+      <button onclick="closeMessage()">Đóng</button>
+    </div>
+  </div>
+
+  <!-- File JS -->
+  <script src="script.js"></script>
+</body>
+</html>
